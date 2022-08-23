@@ -22,7 +22,36 @@ type MutationsDictionary =
         restler_fuzzable_date_unquoted : string list
         restler_fuzzable_uuid4 : string list
         restler_fuzzable_uuid4_unquoted : string list
-
+        restler_fuzzable_id : string list
+        restler_fuzzable_id_unquoted : string list
+        restler_fuzzable_name : string list
+        restler_fuzzable_name_unquoted : string list
+        restler_fuzzable_description : string list
+        restler_fuzzable_description_unquoted : string list
+        restler_fuzzable_area : string list
+        restler_fuzzable_area_unquoted : string list
+        restler_fuzzable_url : string list
+        restler_fuzzable_url_unquoted : string list
+        restler_fuzzable_language : string list
+        restler_fuzzable_language_unquoted : string list
+        restler_fuzzable_media_type : string list
+        restler_fuzzable_media_type_unquoted : string list
+        restler_fuzzable_color : string list
+        restler_fuzzable_color_unquoted : string list
+        restler_fuzzable_email : string list
+        restler_fuzzable_email_unquoted : string list
+        restler_fuzzable_query : string list
+        restler_fuzzable_query_unquoted : string list
+        restler_fuzzable_path : string list
+        restler_fuzzable_path_unquoted : string list
+        restler_fuzzable_domain : string list
+        restler_fuzzable_domain_unquoted : string list
+        restler_fuzzable_ip : string list
+        restler_fuzzable_ip_unquoted : string list
+        restler_fuzzable_string_datetime : string list
+        restler_fuzzable_string_datetime_unquoted : string list
+        restler_fuzzable_string_date : string list
+        restler_fuzzable_string_date_unquoted : string list
         restler_fuzzable_int : string list
         restler_fuzzable_number : string list
         restler_fuzzable_bool : string list
@@ -214,6 +243,36 @@ let DefaultMutationsDictionary =
         restler_custom_payload_header_unquoted = None
         restler_custom_payload_query = None
         shadow_values = None
+        restler_fuzzable_id = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_id_unquoted = []
+        restler_fuzzable_name = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_name_unquoted = []
+        restler_fuzzable_description = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_description_unquoted = []
+        restler_fuzzable_area = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_area_unquoted = []
+        restler_fuzzable_url = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_url_unquoted = []
+        restler_fuzzable_language = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_language_unquoted = []
+        restler_fuzzable_media_type = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_media_type_unquoted = []
+        restler_fuzzable_color = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_color_unquoted = []
+        restler_fuzzable_email = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_email_unquoted = []
+        restler_fuzzable_query = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_query_unquoted = []
+        restler_fuzzable_path = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_path_unquoted = []
+        restler_fuzzable_domain = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_domain_unquoted = []
+        restler_fuzzable_ip = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_ip_unquoted = []
+        restler_fuzzable_string_datetime = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_string_datetime_unquoted = []
+        restler_fuzzable_string_date = [DefaultPrimitiveValues.[PrimitiveType.String]]
+        restler_fuzzable_string_date_unquoted = []
     }
 
 /// Gets the dictionary from string

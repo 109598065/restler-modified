@@ -50,6 +50,23 @@ REFRESHABLE_AUTHENTICATION_TOKEN = "restler_refreshable_authentication_token"
 BASEPATH = "restler_basepath"
 SHADOW_VALUES = "shadow_values"
 
+# classification
+FUZZABLE_ID = "restler_fuzzable_id"
+FUZZABLE_NAME = "restler_fuzzable_name"
+FUZZABLE_DESCRIPTION = "restler_fuzzable_description"
+FUZZABLE_AREA = "restler_fuzzable_area"
+FUZZABLE_URL = "restler_fuzzable_url"
+FUZZABLE_LANGUAGE = "restler_fuzzable_language"
+FUZZABLE_MEDIA_TYPE = "restler_fuzzable_media_type"
+FUZZABLE_COLOR = "restler_fuzzable_color"
+FUZZABLE_EMAIL = "restler_fuzzable_email"
+FUZZABLE_QUERY = "restler_fuzzable_query"
+FUZZABLE_PATH = "restler_fuzzable_path"
+FUZZABLE_DOMAIN = "restler_fuzzable_domain"
+FUZZABLE_IP = "restler_fuzzable_ip"
+FUZZABLE_STRING_DATETIME = "restler_fuzzable_string_datetime"
+FUZZABLE_STRING_DATE = "restler_fuzzable_string_date"
+
 # Optional argument passed to grammar function definition functions
 QUOTED_ARG = 'quoted'
 # Suffix present in always-unquoted primitive lists in the mutations dictionary.
@@ -147,7 +164,22 @@ class CandidateValuesPool(object):
             CUSTOM_PAYLOAD_UUID4_SUFFIX,
             REFRESHABLE_AUTHENTICATION_TOKEN,
             BASEPATH,
-            SHADOW_VALUES
+            SHADOW_VALUES,
+            FUZZABLE_ID,
+            FUZZABLE_NAME,
+            FUZZABLE_DESCRIPTION,
+            FUZZABLE_AREA,
+            FUZZABLE_URL,
+            FUZZABLE_LANGUAGE,
+            FUZZABLE_MEDIA_TYPE,
+            FUZZABLE_COLOR,
+            FUZZABLE_EMAIL,
+            FUZZABLE_QUERY,
+            FUZZABLE_PATH,
+            FUZZABLE_DOMAIN,
+            FUZZABLE_IP,
+            FUZZABLE_STRING_DATETIME,
+            FUZZABLE_STRING_DATE,
         ]
         self.supported_primitive_dict_types = [
             CUSTOM_PAYLOAD,
@@ -979,3 +1011,244 @@ def restler_basepath(*args, **kwargs):
     param_name = None
     writer_variable = None
     return sys._getframe().f_code.co_name, basepath_value, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_id(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_name(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_description(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+
+def restler_fuzzable_area(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=None
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_url(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_language(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_media_type(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_color(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_email(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_query(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_path(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_domain(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_ip(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_string_datetime(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
+
+def restler_fuzzable_string_date(*args, **kwargs):
+    field_name = args[0]
+    quoted = False
+    if QUOTED_ARG in kwargs:
+        quoted = kwargs[QUOTED_ARG]
+    examples=[]
+    if EXAMPLES_ARG in kwargs:
+        examples = kwargs[EXAMPLES_ARG]
+    param_name = None
+    if PARAM_NAME_ARG in kwargs:
+        param_name = kwargs[PARAM_NAME_ARG]
+    writer_variable = None
+    if WRITER_VARIABLE_ARG in kwargs:
+        writer_variable = kwargs[WRITER_VARIABLE_ARG]
+    return sys._getframe().f_code.co_name, field_name, quoted, examples, param_name, writer_variable
